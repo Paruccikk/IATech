@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=http://191.252.102.159:3000/assinatura.html" />
+  <title>Redirecionando...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      background-image: url('logotipo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  /* Cobrir toda a área */
+      background-attachment: fixed;
+      opacity: 1;  /* Reset da opacidade do body */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.85);  /* Camada branca semi-transparente */
+      z-index: -1;
+    }
+    
+    .content {
+      background-color: rgba(255, 255, 255, 0.95);  /* Fundo mais opaco para melhor legibilidade */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 80%;
+    }
+    
+    p {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: #004499;
+      text-decoration: underline;
+    }
+    
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top: 4px solid #0066cc;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <p>Redirecionando para o site...</p>
+    <div class="spinner"></div>
+    <p><a href="http://191.252.102.159:3001/login.html">Clique aqui se não for redirecionado automaticamente</a></p>
+  </div>
+</body>
+</html>
